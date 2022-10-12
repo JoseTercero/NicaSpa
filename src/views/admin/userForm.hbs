@@ -1,0 +1,71 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-5 offset-md-3">
+      <div class="card card-body bg-white p-4 text-black rounde-0">
+        <h1>Add User</h1>
+        <form
+          action="/admin/user/add"
+          method="POST"
+          enctype="multipart/form-data"
+        >
+          <div class="mb-3">
+            <label for="name">Name:</label>
+            <input
+              type="text"
+              name="name"
+              placeholder="Name"
+              class="form-control rounded-0 bg-white text-black"
+              value="{{name}}"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              class="form-control rounded-0 bg-white text-black"
+              value="{{email}}"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="role">Role:</label>
+            <input
+              type="text"
+              name="role"
+              placeholder="Role"
+              class="form-control rounded-0 bg-white text-black"
+              value="{{role}}"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              class="form-control bg-white text-black"
+              name="password"
+              placeholder="Password"
+              value="{{password}}"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="confirm_password">Confirm Password:</label>
+            <input
+              type="password"
+              class="form-control bg-white text-black"
+              name="confirm_password"
+              placeholder="Confirm Password"
+              value="{{confirm_password}}"
+            />
+          </div>
+          <button class="btn btn-primary">Add</button>
+          <a href="/admin/usersList"><input
+              type="button"
+              class="btn btn-secondary"
+              value="Cancelar"
+            /></a>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

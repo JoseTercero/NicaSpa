@@ -1,0 +1,54 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-5 offset-md-3">
+      <div class="card card-body bg-white p-4 text-black rounde-0">
+        <h1>Update User</h1>
+        <form action="/admin/user-edit/{{_id}}?_method=PUT" method="POST">
+          <input type="hidden" name="_method" value="PUT" />
+          <div class="mb-3">
+            <label for="name">Name:</label>
+            <input
+              type="text"
+              name="name"
+              placeholder="Name"
+              value="{{name}}"
+              class="form-control rounded-0 bg-white text-black"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              name="email"
+              rows="3"
+              placeholder="Email"
+              class="form-control rounded-0 bg-white text-black"
+              value="{{email}}"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label for="role">Role:</label>
+            <input
+              style="text-transform:lowercase;"
+              type="text"
+              name="role"
+              placeholder="Role"
+              value="{{role}}"
+              text-transform="lowercase"
+              class="form-control rounded-0 bg-white text-black"
+              required
+            />
+          </div>
+          <button class="btn btn-primary">Update</button>
+          <a href="/admin/usersList"><input
+              type="button"
+              class="btn btn-secondary"
+              value="Cancelar"
+            /></a>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

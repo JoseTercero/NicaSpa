@@ -1,0 +1,50 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-5 offset-md-3">
+      <div class="card card-body bg-white p-4 text-black rounde-0">
+        <h1>Update Treatment</h1>
+        <form action="/admin/treatment-edit/{{_id}}?_method=PUT" method="POST">
+          <input type="hidden" name="_method" value="PUT" />
+          <div class="mb-3">
+            <label for="name">Name:</label>
+            <input
+              type="text"
+              name="name"
+              placeholder="Name"
+              value="{{name}}"
+              class="form-control rounded-0 bg-white text-black"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label for="description">Description:</label>
+            <textarea
+              type="text"
+              name="description"
+              rows="3"
+              placeholder="Description"
+              class="form-control rounded-0 bg-white text-black"
+            >{{description}}</textarea>
+          </div>
+          <div class="mb-3">
+            <label for="role">Price:</label>
+            <input
+              type="number"
+              name="price"
+              placeholder="Price"
+              value="{{price}}"
+              class="form-control rounded-0 bg-white text-black"
+              required
+            />
+          </div>
+          <button class="btn btn-primary">Update</button>
+          <a href="/admin/usersList"><input
+              type="button"
+              class="btn btn-secondary"
+              value="Cancelar"
+            /></a>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

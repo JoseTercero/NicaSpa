@@ -1,0 +1,57 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-5 offset-md-3">
+      <div class="card card-body bg-white p-4 text-black rounde-0">
+        <h1>Add Treatment</h1>
+        <form
+          action="/admin/treatment/add"
+          method="POST"
+          enctype="multipart/form-data"
+        >
+          <div class="mb-3">
+            <label for="name">Name:</label>
+            <input
+              type="text"
+              name="name"
+              placeholder="Name"
+              class="form-control rounded-0 bg-white text-black"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="description">Description:</label>
+            <textarea
+              type="text"
+              name="description"
+              rows="3"
+              placeholder="Description"
+              class="form-control rounded-0 bg-white text-black"
+            ></textarea>
+          </div>
+          <div class="mb-3">
+            <label for="price">Price:</label>
+            <input
+              type="text"
+              name="price"
+              placeholder="Price"
+              class="form-control rounded-0 bg-white text-black"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="image">Image:</label>
+            <input
+              type="file"
+              name="image"
+              class="form-control rounded-0 bg-white text-black"
+            />
+          </div>
+          <button class="btn btn-primary">Add</button>
+          <a href="/admin/treatmentsList"><input
+              type="button"
+              class="btn btn-secondary"
+              value="Cancelar"
+            /></a>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,96 @@
+{{!-- {{#each treatments}}
+{{!-- <div class="card w-10">
+  <img src="{{image}}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{name}}</h5>
+    <p class="card-text">{{description}}</p>
+    <p class="card-text">${{price}}</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div> --}}
+
+{{! <main class="container p-4"> }}
+{{!-- <div class="card w-75">
+  <div class="card-body">
+    <img src="{{image}}" class="card-img-top" alt="...">
+    <h5 class="card-title">{{name}}</h5>
+    <p class="card-text">${{description}}</p>
+    <p class="card-text">{{price}}</p>
+    <a href="#" class="btn btn-primary">Button</a>
+  </div>
+</div> --}}
+{{!-- <div class="card bg-dark text-white">
+  <img src="{{image}}" class="card-img" alt="...">
+  <div class="card-img-overlay">
+    <h5 class="card-title">{{name}}</h5>
+    <p class="card-text">{{description}}</p>
+    <p class="card-text">{{price}}</p>
+    <a href="#" class="btn btn-primary">Button</a>
+  </div>
+</div> --}}
+{{!-- <div class="row">
+  <div class="col-sm-4">
+    <div class="card card-block">
+        <img src="{{image}}" class="card-img" alt="...">
+      <h3 class="card-title">{{name}}</h3>
+      <p class="card-text">{{description}}</p>
+      <p class="card-text">${{price}}</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+</div>
+</main> --}}
+<div class="title h1 text-center">Nica Spa Treatments</div>
+{{#if user}}
+  <h4>Hello {{user.name}}</h4>
+{{/if}}
+
+{{#each treatments}}
+  <div class="container py-3">
+    <!-- Card Start -->
+    <div class="card">
+      <div class="row">
+        <div class="col-md-7 px-3">
+          <div class="card-block px-6">
+            <h4 class="card-title">{{name}}</h4>
+            <p class="card-text">
+              {{description}}
+            </p>
+            <p class="card-text">
+              ${{price}}
+            </p>
+            <a href="#" class="mt-auto btn btn-primary">Book Now</a>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <img class="d-block" src="{{image}}" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- End of card -->
+  </div>
+{{/each}}
+{{! 
+<div class="card" style="width: 18rem;">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div> }}
+
+{{!-- <div class="row">
+  {{#each treatments}}
+    <div class="col-md-4">
+      <div class="card" style="width: 18rem;">
+        <img src="{{image}}" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">{{name}}</h5>
+          <p class="card-text">{{description}}</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+  {{/each}}
+</div> --}}

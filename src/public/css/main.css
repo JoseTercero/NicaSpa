@@ -1,0 +1,192 @@
+body {
+  background: #bdc3c7;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  
+  .logo {
+    width: 50%;
+  }
+  
+  /* .bg-black {
+    background: #090909;
+  } */
+
+/* body{
+    background: #edf1f5;
+    margin-top:20px;
+} */
+/* For users */
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 0 solid transparent;
+    border-radius: 0;
+}
+.btn-circle.btn-lg, .btn-group-lg>.btn-circle.btn {
+    width: 50px;
+    height: 50px;
+    padding: 14px 15px;
+    font-size: 18px;
+    line-height: 23px;
+}
+.text-muted {
+    color: #8898aa!important;
+}
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+    cursor: pointer;
+}
+.btn-circle {
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+}
+.user-table tbody tr .category-select {
+    max-width: 150px;
+    border-radius: 20px;
+}
+
+/* For Orders */
+.gradient-custom-2 {
+  /* fallback for old browsers */
+  background: #a1c4fd;
+  
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, rgba(161, 196, 253, 1), rgba(194, 233, 251, 1));
+  
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, rgba(161, 196, 253, 1), rgba(194, 233, 251, 1))
+  }
+  
+  #progressbar-1 {
+  color: #455A64;
+  }
+  
+  #progressbar-1 li {
+  list-style-type: none;
+  font-size: 13px;
+  width: 33.33%;
+  float: left;
+  position: relative;
+  }
+  
+  #progressbar-1 #step1:before {
+  content: "1";
+  color: #fff;
+  width: 29px;
+  margin-left: 22px;
+  padding-left: 11px;
+  }
+  
+  #progressbar-1 #step2:before {
+  content: "2";
+  color: #fff;
+  width: 29px;
+  }
+  
+  #progressbar-1 #step3:before {
+  content: "3";
+  color: #fff;
+  width: 29px;
+  margin-right: 22px;
+  text-align: center;
+  }
+  
+  #progressbar-1 li:before {
+  line-height: 29px;
+  display: block;
+  font-size: 12px;
+  background: #455A64;
+  border-radius: 50%;
+  margin: auto;
+  }
+  
+  #progressbar-1 li:after {
+  content: '';
+  width: 121%;
+  height: 2px;
+  background: #455A64;
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 15px;
+  z-index: -1;
+  }
+  
+  #progressbar-1 li:nth-child(2):after {
+  left: 50%
+  }
+  
+  #progressbar-1 li:nth-child(1):after {
+  left: 25%;
+  width: 121%
+  }
+  
+  #progressbar-1 li:nth-child(3):after {
+  left: 25%;
+  width: 50%;
+  }
+  
+  #progressbar-1 li.active:before,
+  #progressbar-1 li.active:after {
+  background: #1266f1;
+  }
+  
+  /* .card-stepper {
+  z-index: 0
+  }
+
+  .grid-container {
+    display: grid;  
+    grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: 100px;
+  } */
+  
+  /* For Showing the treatments options to any user */
+  .title {
+   
+      margin-bottom: 50px;
+      text-transform: uppercase;
+  }
+  
+  .card-block {
+      font-size: 1em;
+      position: relative;
+      margin: 0;
+      padding: 1em;
+      border: none;
+      border-top: 1px solid rgba(34, 36, 38, .1);
+      box-shadow: none;
+       
+  }
+  .card {
+      font-size: 1em;
+      overflow: hidden;
+      padding: 5;
+      border: none;
+      border-radius: .28571429rem;
+      box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
+      margin-top:20px;
+  }
+  .btn {
+    margin-top: auto;
+  }
+  img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 350px;
+  }
+
+  

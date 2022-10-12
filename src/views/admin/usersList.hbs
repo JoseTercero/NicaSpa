@@ -1,0 +1,90 @@
+{{#if user}}
+  <a href="/admin/users/addForm" type="button" class="btn btn-primary">Add User</a>
+  {{#if users}}
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title text-uppercase mb-0">Manage Users</h5>
+            </div>
+            <div class="table-responsive">
+              <table class="table no-wrap user-table mb-0">
+                <thead>
+                  <tr>
+                    <th
+                      scope="col"
+                      class="border-0 text-uppercase font-medium pl-4"
+                    >#</th>
+                    <th
+                      scope="col"
+                      class="border-0 text-uppercase font-medium"
+                    >Name</th>
+                    <th
+                      scope="col"
+                      class="border-0 text-uppercase font-medium"
+                    >Email</th>
+                    <th
+                      scope="col"
+                      class="border-0 text-uppercase font-medium"
+                    >Role</th>
+                    <th
+                      scope="col"
+                      class="border-0 text-uppercase font-medium"
+                    >Added</th>
+                    <th
+                      scope="col"
+                      class="border-0 text-uppercase font-medium"
+                    >Las Sign in</th>
+                    <th
+                      scope="col"
+                      class="border-0 text-uppercase font-medium"
+                    >Manage</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {{#each users}}
+                    <div class="container py-3">
+                      <tr>
+                        <td class="pl-4">{{inc @index}}</td>
+                        <td>
+                          <h5 class="font-medium mb-0">{{name}}</h5>
+                        </td>
+                        <td>
+                          <span class="text-muted">{{email}}</span><br />
+                        </td>
+                        <td>
+                          <span class="text-muted">{{role}}</span><br />
+                        </td>
+                        <td>
+                          <span class="text-muted">{{#toDate
+                              createdAt
+                            }}{{/toDate}}</span><br />
+                        </td>
+                        <td>
+                          <span class="text-muted">{{#toDate
+                              lastSignIn
+                            }}{{/toDate}}</span><br />
+                        </td>
+                        <td>
+                          <a
+                            href="/admin/users/{{_id}}/delete"
+                            class="btn btn-outline-info btn-circle btn-lg btn-circle ml-2"
+                          ><i class="fa fa-trash"></i></a>
+                          <a
+                            href="/admin/users/{{_id}}/edit"
+                            class="btn btn-outline-info btn-circle btn-lg btn-circle ml-2"
+                          ><i class="fa fa-edit"></i></a>
+                        </td>
+                      </tr>
+                    </div>
+                  {{/each}}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  {{/if}}
+{{/if}}
